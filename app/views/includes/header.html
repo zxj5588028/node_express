@@ -1,0 +1,60 @@
+
+<div class="container">
+  <div class="row">
+    <div class="page-header">
+      <h1><small>重度科幻迷</small></h1>
+    </div>
+  </div>
+</div>
+<div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-header"><a href="/" class="navbar-brand">重度科幻迷</a></div>
+    <p class="navbar-text navbar-right"><a href="#" data-toggle="modal" data-target="#signupModal" class="navbar-link">注册</a><span>&nbsp;|&nbsp;      </span><a href="#" data-toggle="modal" data-target="#signinModal" class="navbar-link">登录</a></p>
+  </div>
+</div>
+<div id="signupModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="POST" action="/user/signup">
+        <div class="modal-header">注册</div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="signupName">用户名</label>
+            <input id="signupName" name="user[name]" type="text" class="form-control"/>
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">密码</label>
+            <input id="signupPassword" name="user[password]" type="text" class="form-control"/>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
+          <button type="submit" class="btn btn-success">提交</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="signinModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="POST" action="/user/signin">
+        <div class="modal-header">登录</div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="signinName">用户名</label>
+            <input id="signinName" name="user[name]" type="text" class="form-control"/>
+          </div>
+          <div class="form-group">
+            <label for="signinPassword">密码</label>
+            <input id="signinPassword" name="user[password]" type="text" class="form-control"/>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
+          <button type="submit" class="btn btn-success">提交</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
